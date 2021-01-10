@@ -466,21 +466,29 @@
 					 5 different vehicular network scenarios are generated in a VANET with 25 devices using pubnub
 					 to establish connections between devices(RaspberryPi's) . 10 vehicles, 5 Traffic signals, 
 					 5 RSU's and 5 Parking slots are simulated on RPi's. The 5 different scenarios include
+					    <br><br>
 					 1. Traffic Signal : Vehicle receives the message from the near-by traffic signal while it is in the 
 					    vicinity of the signal and takes an appropriate action .
+					    <br><br>
 					 2. Parking Slot : Vehicle sends a message to the parking slot to enquire the current status and based 
 					    on the reply, it takes an appropriate action . If the parking slot is empty, vehicle moves into the
 					    parking slot and the message is relayed back to the parking slot which changes slot to 'Occupied'
+					    <br><br>
 					 3. Reporting Accident: When a vehicle comes across an accident, it reports the data to a nearby RSU
+					    <br><br>
 					 4. RSU-Vehicle : When there is an accident reported to RSU, it passes on that information to all the remaining
 					    RSU's and when a vehicle is about to enter the accident lane, RSU sends a message informing the 
 					    accident and the vehicle changes the lanes accordingly
+					    <br><br>
 					 5. RSU-Ambulance : When an accident is reported to an RSU, it alerts the nearby ambulance to move to the 
 					    accident spot
+					    <br><br>
 					 6. RSU-drone :  When a drone passes by an accident scene and spot the accident scene using its sensors, 
 					    it passes the information to the RSU on its trajectory, which inturn alerts all the remaining RSU's
                                         <br><br>
-                                        
+                                        To understand the scenarios better, watch the animations here:
+                                        <a href="https://github.com/ManvithaKola/VANET-Simulation-on-Rpi/tree/main/VANET-Scenarios"
+                                            target="_blank">VANET-Scenarios</a> folder on my GitHub.
                                         <br><br>
                                         For further details please read the
                                         <a href="https://github.com/ManvithaKola/VANET-Simulation-on-Rpi/blob/main/README.md"
