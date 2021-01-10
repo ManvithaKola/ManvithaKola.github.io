@@ -454,34 +454,36 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Body Area Network</h2>
+                                    <h2 class="text-uppercase">Vehicular Network Simulation on RaspberryPi</h2>
                                     <p class="item-intro text-muted">
-                                        <a target="_blank" href="https://github.com/mukeshmk/ban-on-awscloud9">
-                                            <i class="fab fa-github"></i> mukeshmk/ban-on-awscloud9
+                                        <a target="_blank" href="https://github.com/ManvithaKola/VANET-Simulation-on-Rpi">
+                                            <i class="fab fa-github"></i> ManvithaKola/VANET-Simulation-on-Rpi
                                         </a>
                                     </p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/02-ban.jpg"
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/02-VANET1.jpg"
                                         alt="" />
-                                    <p> Various devices like: blood pressure sensor, body temperature sensor, ecg
-                                        sensor, heart beat sensor,
-                                        insulin sensor, lactic acid sensor, ph value sensor, pulse oximeter sensor and
-                                        respiratory monitor
-                                        sensor were simulated along with a command line iterface for the external agent
-                                        to interface with
-                                        the iot devices in real time, a sink device (a highly function/power device
-                                        which is always in close
-                                        proximity to the the user - say a mobile phone) which transmites all the data
-                                        from the devices to the
-                                        cerntral server and the server in itself which alerts the docters in case of an
-                                        emergency.
+                                    <p> 
+					 5 different vehicular network scenarios are generated in a VANET with 25 devices using pubnub
+					 to establish connections between devices(RaspberryPi's) . 10 vehicles, 5 Traffic signals, 
+					 5 RSU's and 5 Parking slots are simulated on RPi's. The 5 different scenarios include
+					 1. Traffic Signal : Vehicle receives the message from the near-by traffic signal while it is in the 
+					    vicinity of the signal and takes an appropriate action .
+					 2. Parking Slot : Vehicle sends a message to the parking slot to enquire the current status and based 
+					    on the reply, it takes an appropriate action . If the parking slot is empty, vehicle moves into the
+					    parking slot and the message is relayed back to the parking slot which changes slot to 'Occupied'
+					 3. Reporting Accident: When a vehicle comes across an accident, it reports the data to a nearby RSU
+					 4. RSU-Vehicle : When there is an accident reported to RSU, it passes on that information to all the remaining
+					    RSU's and when a vehicle is about to enter the accident lane, RSU sends a message informing the 
+					    accident and the vehicle changes the lanes accordingly
+					 5. RSU-Ambulance : When an accident is reported to an RSU, it alerts the nearby ambulance to move to the 
+					    accident spot
+					 6. RSU-drone :  When a drone passes by an accident scene and spot the accident scene using its sensors, 
+					    it passes the information to the RSU on its trajectory, which inturn alerts all the remaining RSU's
                                         <br><br>
-                                        The concepts used in the project are: AWS IoT Core, IoT Device Registry, AWS IoT
-                                        Rules,
-                                        AWS IoT Device Shadows, AWS APIs and SDKs with IoT, IoT communications protocols
-                                        and Security.
+                                        
                                         <br><br>
                                         For further details please read the
-                                        <a href="https://github.com/mukeshmk/ban-on-awscloud9/blob/master/README.md"
+                                        <a href="https://github.com/ManvithaKola/VANET-Simulation-on-Rpi/blob/main/README.md"
                                             target="_blank">README.md</a> file on my GitHub.
                                     </p>
                                     <button class="btn btn-primary" data-dismiss="modal" type="button">
